@@ -70,3 +70,37 @@ h1 {
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	grid-gap: 20px;
 }
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+
+	background: #f4f4f4;
+	opacity: 0.95;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#closeBtn {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+button {
+	background-color: orangered;
+	padding: 10px 20px;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	transition: transform 100ms;
+}
+
+button:hover {
+	cursor: pointer;
+	transform: translateY(-1px);
+}
